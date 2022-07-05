@@ -153,7 +153,30 @@
 
 //  console.log((a/b).toFixed(2))
 
- var c = 10;
- var d = 3;
+//  var c = 10;
+//  var d = 3;
 
- console.log(c%d)
+//  console.log(c%d)
+
+// COMPARISON
+
+// console.log(1=='1');
+// console.log(0 == undefined )
+
+//LOGICKI OPERATORI
+
+// console.log((1==1)||(2==3)&&(4==5))
+
+// TERNARY OPERATOR
+
+// var a = 5;
+// var b = 5;
+
+// console.log ( a==b ? 'Equal' : 'Not equal')
+
+// OPERATORS PRECEDENCE
+
+var a = 5;
+var b = 6;
+
+console.log(a+b*2)
