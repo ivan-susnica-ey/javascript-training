@@ -50,4 +50,45 @@ listItem.append(p)
 
 // console.log(confirm('Are you sure?'))
 
-console.log(prompt('Your name?'))
+// console.log(prompt('Your name?'))
+
+//EVENTS
+
+var btn = document.querySelector('button');
+
+ window.onload = function() {
+    console.log('Window loaded.')
+ }
+
+//  btn.onclick = function() {
+//     console.log('Clicked')
+//  }
+
+function listener1() {
+    console.log('Listener1')
+}
+function listener2() {
+    console.log('Listener2')
+}
+
+btn.addEventListener('click', listener1)
+
+btn.addEventListener('click', listener2)
+
+setTimeout(()=>{
+    btn.removeEventListener('click', listener1)
+},2000)
+
+var inner = document.querySelector('#inner');
+var outer = document.querySelector('#outer');
+
+
+inner.addEventListener('click',(event)=>{
+    // event.stopPropagation();
+    console.log('Clicked inner')
+})
+
+outer.addEventListener('click',(event)=>{
+    // console.log(event.target)
+    console.log('Clicked outer')
+}, true)
