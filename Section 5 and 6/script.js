@@ -109,3 +109,84 @@
 // console.log(max);
 // console.log(anna)
 
+// this
+
+// function fn(message) {
+//     console.log(message + this);
+// }
+
+// fn();
+
+// var obj = {
+//     obfn: fn
+// };
+
+// var person = {
+//     name : 'Max'
+// }
+
+// obj.obfn.call(person, 'Hello');
+// obj.obfn.call(person, ['Hello2']);
+
+// creating properties with defineProperty()
+
+// var account = {
+//     cash: 12000,
+//     _name: 'Default', 
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log(`Withdrew ${amount}, new cash reserve is: ${this.cash}`)
+//     }
+// }
+
+// account.withdraw(1000);
+
+// Object.defineProperty(account, 'name', {
+    // value: 'ID000-1',
+    // writable:true
+    // enumerable:true,
+//     get: function() {
+//         return 'Hello';
+//     },
+//     set: function(name) {
+//         if (name=='Max'){
+//             this._name = name;
+
+//         }
+//     }
+// })
+
+// account.deposit(3000);
+// account.withdraw(1000);
+
+// console.log(account.name)
+
+// account.name = 'ID000-3';
+
+// console.log(account.name)
+
+// console.log(account._name)
+
+// BUILT IN METHODS AND PROPERTIES //
+
+// var person = {
+//     name: 'Max',
+//     age: 27,
+//     greet: function() {
+//         console.log('Hello')
+//     }
+// }
+
+// delete person.name
+
+// console.log('name' in person)
+
+// for (var field in person) {
+//     console.log(person[field])
+// }
+
+
+
+
+
+
